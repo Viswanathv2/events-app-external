@@ -13,15 +13,21 @@ External Application for Events.
 
 ### Installing
 
-* TBD: How/where to download your program
-* Any modifications needed to be made to files/folders
+* From parent directory:
+```npm install```
+
+### Testing
+
+* From parent directory
+```
+npm test
+```
 
 ### Executing program
 
-* TBD: How to run the program
-* Step-by-step bullets
+* From parent directory
 ```
-code blocks for commands
+node server.js
 ```
 
 ## Help
@@ -34,9 +40,6 @@ command to run if program contains helper info
 ## Authors
 
 TBD: Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## Version History
 
