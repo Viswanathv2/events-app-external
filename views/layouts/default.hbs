@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Team Care Bears Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+</head>
+<body>
+  <div>
+      <h1>Welcome to Team Care Bears application</h1>
+    {{{body}}}
+</div>
+<div class="form-group">
+  <h2>Add an event</h2>
+    <form action="/event" method="post">
+       title: <input class="form-control" name="title" type="text" /> <br />
+       description: <input class="form-control" name="description" type="text" /> <br />
+       <br />
+        <input type="submit" name="submit" value="Add" />
+    </form>
+  </div>
+  {{!-- <div>
+  <h2>Read an event</h2>
+    <form action="/event/id" method="get">
+       {{{body}}}
+       <br />
+        <input type="submit" name="submit" value="Read" />
+    </form>
+  </div> --}}
+</body>
+</html>
