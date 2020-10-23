@@ -3,11 +3,26 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ title }}</h5>
-                    <p class="card-text">{{ description }}</p>
-                    <a href="#" class="btn">
+                     <h5 class="card-title">Title : {{ title }}</h5> 
+                     <h5 class="card-title">Description : {{ description }}</h5> 
+                     <h5 class="card-title">Likes : {{ likes }}</h5> 
+                    {{!-- Title: <h5 class="card-title">{{ title }}</h5> --}}
+                    {{!-- Description: <p class="card-text">{{ description }}</p> --}}
+                    {{!-- <p class="card-text">{{ likes }}</p> --}}
+                    <br/>
+                    <a href="#" class="btn" t>
                         <i class="fas fa-thumbs-up"></i>
+                        <input type="hidden" value="{{_id}}" name="id">
                     </a>
+                    <form method="POST" action="/event/like">
+                        <input type="hidden" value="{{_id}}" name="id">
+                        <input type="submit" value="Like">
+                    </form>
+                    <br/>
+                    <form method="POST" action="/event/unlike">
+                        <input type="hidden" value="{{_id}}" name="id">
+                    <input type="submit" value="Dislike">
+                </form>
                 </div>
             </div>
         </div>
